@@ -92,7 +92,7 @@
     [:li 
      [:a {:href "#"}
       [:i {:class "fa fa-twitter fa-2x", :aria-hidden "true"}]]]]]]]
-  )
+  
 
 ))
 
