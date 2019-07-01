@@ -14,7 +14,11 @@
   [:div
    [:p "I include simple-component."]
    [simple-component]])
+(defn hello-component [name]
+  [:p "Hello, " name "!"])
 
+(defn say-hello []
+  [hello-component "world"])
 
 (defn main-panel []
   (let [name (re-frame/subscribe [::subs/name])]
