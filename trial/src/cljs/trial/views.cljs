@@ -5,7 +5,6 @@
    ))
 (defn music-component[]
 ( fn []
-  [div:
    [:div {:class "wrap"}
  [:header  
   [:div {:class "container_12"}
@@ -95,7 +94,7 @@
       [:i {:class "fa fa-twitter fa-2x", :aria-hidden "true"}]]]]]]]
   )
 
-]))
+))
 
 (defn main-panel []
   (let [name (re-frame/subscribe [::subs/name])]
