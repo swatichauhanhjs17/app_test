@@ -5,14 +5,20 @@
    ))
 (defn simple-component []
   [:div
-   [:p "I am a component!"]
+   [:p "I am a component!\n I am introduced for[:b checking"]]
    [:p.someclass
     "I have " [:strong "bold"]
     [:span {:style {:color "red"}} " and red "] "text."]])
+
+(defn simple-parent []
+  [:div
+   [:p "I include simple-component."]
+   [simple-component]])
+
 
 (defn main-panel []
   (let [name (re-frame/subscribe [::subs/name])]
     [:div
      [:h1 "Hello from " @name]
-     [simple-component]
+     [simple-parent]
      ]))
