@@ -5,7 +5,7 @@
    ))
 (defn simple-component []
   [:div
-   [:p "I am a component!\n I am introduced for[:b checking"]]
+   [:p "I am a component!\n I am introduced for"[:strong "checking"]]
    [:p.someclass
     "I have " [:strong "bold"]
     [:span {:style {:color "red"}} " and red "] "text."]])
