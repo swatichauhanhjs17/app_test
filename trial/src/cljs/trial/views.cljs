@@ -5,7 +5,8 @@
    ))
 (defn music-component[]
 ( fn []
-   [:div {:class "wrap"}
+[:footer  
+  [:div {:class "wrap"}
  [:header  
   [:div {:class "container_12"}
    [:a {:class "grid_5 cde", :href "#"} "My Music Cloud"]
@@ -61,7 +62,6 @@
     [:img {:src "..\\images\\maxresdefault.jpg", :alt "trap and bass", :width "300px", :height "200px"}]
     [:p "Bass Traps are acoustic energy absorbers which are\n      designed to damp low frequency sound\n      energy with the goal of attaining a\n       flatter low frequency (LF) room\n       response by reducing LF resonances in\n       rooms. They are commonly used in\n        recording studios, mastering rooms,\n         home theatres and other rooms built\n          to provide a critical listening\n          environment."]]]
   [:hr]]]
-[:footer  
  [:div {:class "foot"}
   [:div {:class "foot1"}
    [:ul  
