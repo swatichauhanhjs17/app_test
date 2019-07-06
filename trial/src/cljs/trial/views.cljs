@@ -100,5 +100,5 @@
   (let [name (re-frame/subscribe [::subs/name])]
     [:div
      [:h1 "Hello from " @name]
-     [simple-parent]
+     [ music-component]
      ]))
